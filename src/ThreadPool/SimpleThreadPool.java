@@ -11,6 +11,7 @@ public class SimpleThreadPool {
             Runnable worker = new WorkerThread("" + i);
             executor.execute(worker);
         }
+
         executor.shutdown(); // This will make the executor accept no new threads and finish all existing threads in the queue
         while (!executor.isTerminated()) { // Wait until all threads are finish,and also you can use "executor.awaitTermination();" to wait
         }
