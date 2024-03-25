@@ -20,7 +20,7 @@ public class FutureTaskDemo {
         ArrayList objects = new ArrayList<Integer>();
         LinkedBlockingQueue<Object> objects1 = new LinkedBlockingQueue<>();
         objects1.size();
-
+        System.out.println("111");
     }
     public static class Task implements Callable<Integer> {
         @Override
