@@ -6,6 +6,7 @@ import java.util.concurrent.*;
 public class FutureTaskDemo {
 
     public static void main(String[] args) {
+        System.out.println("123");
         Callable<String> callable =
                 new Callable<String>() {
                     @Override
