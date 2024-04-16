@@ -10,6 +10,7 @@ public class FutureTaskDemo {
                 new Callable<String>() {
                     @Override
                     public String call() throws Exception {
+                        System.out.print("111");
                         return "2333";
                     }
                 };
